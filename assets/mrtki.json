@@ -1,3 +1,6 @@
-{
-	"Babiš": "Bureš"
-}
+[
+	{
+		"regex": "Babiš",
+		"replace_1": "Bureš"
+	}
+]
