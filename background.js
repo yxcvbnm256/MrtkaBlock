@@ -1,4 +1,4 @@
-const mrtki_url = 'https://rawcdn.githack.com/yxcvbnm256/MrtkaBlock/master/assets/mrtki.json';
+const mrtki_url = 'https://raw.githubusercontent.com/yxcvbnm256/MrtkaBlock/master/assets/mrtki.json';
 
 
 fetch(mrtki_url).then(r => r.text()).then(result => {

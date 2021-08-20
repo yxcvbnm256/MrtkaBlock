@@ -41,6 +41,12 @@
 			"replacements": [
 				["Fosílie", "Fosílie", "Fosílii", "Fosílii", "Fosílií"]
 			]
+		},
+		{
+			"match": "(Dominik Feri|Feri)|(Dominika Feriho|Feriho)|(Dominiku Ferimu|Dominikovi Ferimu|Ferimu)|(Dominiku Ferim)|(Dominikem Ferim|Ferim)",
+			"replacements": [
+				["Úplně nahej", "Úplně nahého", "Úplně nahému", "Úplně nahém", "Úplně nahým"],
+				["Predátor z Teplic", "Predátora z Teplic", "Predátoru z Teplic", "PRedátora z Teplic", "Predátoru z Teplic", "Predátorem z Teplic"]
+			],
 		}
-
-	]
+]
