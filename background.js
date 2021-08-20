@@ -1,11 +1,12 @@
-let color = "#3AA757";
+const mrtki_url = 'https://rawcdn.githack.com/yxcvbnm256/MrtkaBlock/master/assets/mrtki.json';
 
-chrome.runtime.onInstalled.addListener(() => {
-	chrome.storage.sync.set({color});
-	console.log('default background set to ' + color);
+
+fetch(mrtki_url).then(r => r.text()).then(result => {
+		chrome.storage.local.set({'mrtkiBlock': JSON.parse(result)});
 });
 
-fetch('https://yxcvbnm256.pythonanywhere.com/static/mrtki/mrtki.json').then(r => r.text()).then(result => {
-    // Result now contains the response text, do what you want...
-    console.log(result);
-})
+chrome.runtime.onStartup.addListener(() => {
+	fetch(mrtki_url).then(r => r.text()).then(result => {
+		chrome.storage.local.set({'mrtkiBlock': JSON.parse(result)});
+	});	
+});

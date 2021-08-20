@@ -1,8 +1,20 @@
-const body = document.body.innerHTML;
+chrome.storage.local.get('mrtkiBlock', (result) => {
 
-fetch('https://yxcvbnm256.pythonanywhere.com/static/mrtki/mrtki.json').then(r => r.text()).then(result => {
-    // Result now contains the response text, do what you want...
-    alert(result);
-})
+	const html = document.querySelector('html');
+	const walker = document.createTreeWalker(html, NodeFilter.SHOW_TEXT);
+	var node;
 
-//alert(markup);
+
+	while (node = walker.nextNode()) {
+	    for (i=0; i<result.length;i++) {
+
+	        const regex = new RegExp(result[i].match,"gm");
+	        const groups = one.exec(node.nodeValue);
+	        if (!!groups) {
+	        	const index = groups.slice(1).findIndex(item => !!item);
+	        	node.nodeValue = node.nodeValue.replace(one, result[i].replacements[Math.floor(Math.random() * result[i].replacements.length)][index]);
+	        }	        
+
+	    }
+	}
+});

@@ -1,6 +1,46 @@
 [
-	{
-		"regex": "Andrej Babiš",
-		"replace_1": "Kuní ksicht"
-	}
-]
+		{
+			"match": "(Andrej Babiš|Babiš)|(Andreje Babiše|Babiše)|(Andreji Babišovi|Andreji Babiši|Babišovi|Babiši)|(Andrejem Babišem|Babišem)",
+			"replacements": [
+				["Kuní Ksicht", "Kuního Ksichta", "Kunímu Ksichtu", "Kuním Ksichtem"],
+				["Manžel Motyky, které to dnes moc sluší", "Manžela Motyky, které to dnes moc sluší", "Manželovi Motyky, které to dnes moc sluší", "Manželem Motyky, které to dnes moc sluší"],
+				["Agent Bureš", "Agenta Bureše", "Agentu Burešovi", "Agentem Burešem"],
+				["Král koblihových lidí", "Krále koblihových lidí", "Králi koblihových lidí", "Králem koblihových lidí"],
+				["Nejlepší covid premiér", "Nejlepšího covid premiéra", "Nejlepšímu covid premiérovi", "Nejlepším covid premiérem"],
+				["STBák", "STBáka", "STBákovi", "STBákem"],
+				["Zdegenerovaný čobol", "Zdegenerovaného čobola", "Zdegenerovanému čobolovi", "Zdegenerovaným čobolem"]
+			]
+		},
+		{
+			"match": "(Miloš Zeman|Zeman)|(Miloše Zemana|Zemana)|(Miloši Zemanovi|Miloši Zemanu|Zemanovi|Zemanu)|(Milošem Zemanem)",
+			"replacements": [
+				["Vepřočlověk", "Vepřočlověka", "Vepřočlověku", "Vepřočlověkem"]
+			]
+		},
+		{
+			"match": "(Jana Maláčová|Maláčová)|(Jany Maláčové)|(Janě Maláčové|Maláčové)|(Janu Maláčovou)|(Janou Maláčovou)",
+			"replacements": [
+				["Venezuela", "Venezuely", "Venezuele", "Venezuelu", "Venezuelou"]
+			]
+		},
+		{
+			"match": "(Tomio Okamura|Okamura)|(Tomia Okamury|Okamury)|(Tomiu Okamurovi|Okamurovi)|(Tomia Okamuru|Okamuru)|(Tomiem Okamurou|Okamurou)",
+			"replacements": [
+				["Lobotomio Zmrdamura", "Lobotomia Zmrdamury", "Lobotomiu Zmrdamurovi", "Lobotomia Zmrdamuru", "Lobotomiem Zmrdamurou"],
+				["Pitomio", "Pitomia", "Pitomiu", "Pitomia", "Pitomiem"]
+			]
+		},
+		{
+			"match": "(Daniel Landa|Landa)|(Daniela Landy|Landy)|(Danielu Landovi|Landovi)|(Daniela Landu|Landu)|(Danielem Landou|Landou)",
+			"replacements": [
+				["Daniel Kukluxklanda", "Daniela Kukluxklandy", "Danielu Kukluxklandovi", "Daniela Kukluxklandu", "Danielem Kukluxklandou"]
+			]
+		},
+		{
+			"match": "(Helena Vondráčková)|(Heleny Vondráčkové)|(Heleně Vondráčkové)|(Helenu Vondráčkovou)|(Helenou Vondráčkovou)",
+			"replacements": [
+				["Fosílie", "Fosílie", "Fosílii", "Fosílii", "Fosílií"]
+			]
+		}
+
+	]
