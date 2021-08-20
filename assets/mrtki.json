@@ -39,7 +39,7 @@
 		{
 			"match": "(Helena Vondráčková)|(Heleny Vondráčkové)|(Heleně Vondráčkové)|(Helenu Vondráčkovou)|(Helenou Vondráčkovou)",
 			"replacements": [
-				["Fosílie", "Fosílie", "Fosílii", "Fosílii", "Fosílií"]
+				["Pravěká fosílie", "Pravěké fosílie", "Pravěké fosílii", "Pravěké fosílii", "Pravěkou fosílií"]
 			]
 		},
 		{
@@ -47,6 +47,6 @@
 			"replacements": [
 				["Úplně nahej", "Úplně nahého", "Úplně nahému", "Úplně nahém", "Úplně nahým"],
 				["Predátor z Teplic", "Predátora z Teplic", "Predátoru z Teplic", "PRedátora z Teplic", "Predátoru z Teplic", "Predátorem z Teplic"]
-			],
+			]
 		}
 ]
